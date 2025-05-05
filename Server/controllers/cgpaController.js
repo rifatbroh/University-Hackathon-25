@@ -55,6 +55,7 @@ exports.addSemesterGpa = async (req, res) => {
     await cgpa.save();
     res.status(201).json(cgpa.history);
   } catch (error) {
+    console.error("Add Semester GPA Error:", error);
     res.status(500).json({ error: 'Failed to add semester GPA' });
   }
 };

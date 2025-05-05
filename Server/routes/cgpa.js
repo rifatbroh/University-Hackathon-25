@@ -6,7 +6,7 @@ const cgpaController = require('../controllers/cgpaController.js');
 router.get('/', cgpaController.getCgpa);
 
 // POST or PUT overall CGPA
-router.post('/', cgpaController.setOrUpdateCgpa);
+router.post('/', cgpaController.addSemesterGpa);
 router.put('/', cgpaController.setOrUpdateCgpa);
 
 // GET semester history
