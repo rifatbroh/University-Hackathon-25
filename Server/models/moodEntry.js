@@ -18,4 +18,4 @@ const moodEntrySchema = new mongoose.Schema({
   }
 });
 
-module.exports = mongoose.model("MoodEntry", moodEntrySchema);
+module.exports = mongoose.models.MoodEntry || mongoose.model('MoodEntry', moodEntrySchema);

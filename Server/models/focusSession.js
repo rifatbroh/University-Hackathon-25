@@ -19,4 +19,4 @@ const focusSessionSchema = new mongoose.Schema({
   }
 });
 
-module.exports = mongoose.model("FocusSession", focusSessionSchema);
+module.exports = mongoose.models.FocusSession || mongoose.model('FocusSession', focusSessionSchema);
