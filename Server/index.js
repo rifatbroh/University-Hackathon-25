@@ -17,6 +17,7 @@ const movieRoutes = require('./routes/movieRoutes.js');
 const funFactRoutes = require('./routes/funFactRoutes');
 const scheduleRoutes = require('./routes/scheduleRoutes');
 const focusRoutes = require("./routes/focusRoutes");
+const moodRoutes = require("./routes/moodRoutes");
 
 
 
@@ -47,6 +48,7 @@ app.use('/api/movies', movieRoutes);
 app.use('/api/fun-fact', funFactRoutes);
 app.use('/api/schedule', scheduleRoutes);
 app.use("/api/focus", focusRoutes);
+app.use("/api/mood", moodRoutes);
 
 
 // Start the server.
