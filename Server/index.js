@@ -20,7 +20,8 @@ const focusRoutes = require("./routes/focusRoutes");
 const moodRoutes = require("./routes/moodRoutes");
 const heroDashboardRoutes = require('./routes/heroDashboard');
 const marathonRoutes = require('./routes/marathonRoutes');
-
+const gymRoutes = require('./routes/gymRoutes');
+const gymBroRoutes = require('./routes/gymBroRoutes');
 
 
 
@@ -54,6 +55,8 @@ app.use("/api/focus", focusRoutes);
 app.use("/api/mood", moodRoutes);
 app.use('/api/hero-dashboard', heroDashboardRoutes);
 app.use('/api/marathon', marathonRoutes);
+app.use('/api/gym', gymRoutes);
+app.use('/api/gym-bro', gymBroRoutes);
 
 
 // Start the server.
