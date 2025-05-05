@@ -1,7 +1,7 @@
 const Cgpa = require('../models/Cgpa');
 const Skill = require('../models/Skill');
 const AppliedJob = require('../models/AppliedJob');
-const FocusSession = require('../models/FocusSession');
+const FocusSession = require('../models/focusSession');
 const MoodEntry = require('../models/MoodEntry');
 const Schedule = require('../models/Schedule');
 
