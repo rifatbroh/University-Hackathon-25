@@ -5,8 +5,16 @@ const dotenv = require('dotenv');
 
 const connectDB = require('./config/db.js');
 const authRoutes = require('./routes/auth.js');
+const cgpaRoutes = require('./routes/cgpa');
+const semesterPlannerRoutes = require('./routes/semesterPlannerRoutes');
+const subjectGoalRoutes = require('./routes/subjectGoalRoutes');
+const skillRoutes = require('./routes/skillRoutes');
+
+
 // DB connection.
 dotenv.config();
+// require('dotenv').config({ path: '/openai.env' });
+
 connectDB();
 
 // start the app
@@ -18,6 +26,11 @@ app.use(cors());
 
 // Routes
 app.use('/api/auth', authRoutes);
+app.use('/api/cgpa', cgpaRoutes);
+app.use('/api/semester-planner', semesterPlannerRoutes);
+app.use('/api/subject-goals', subjectGoalRoutes);
+app.use('/api/skills', skillRoutes);
+
 
 // Start the server.
 const PORT = process.env.PORT || 7001;
