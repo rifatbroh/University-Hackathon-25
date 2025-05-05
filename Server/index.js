@@ -9,6 +9,9 @@ const cgpaRoutes = require('./routes/cgpa');
 const semesterPlannerRoutes = require('./routes/semesterPlannerRoutes');
 const subjectGoalRoutes = require('./routes/subjectGoalRoutes');
 const skillRoutes = require('./routes/skillRoutes');
+const jobRoutes = require('./routes/jobRoutes');
+const appliedJobRoutes = require('./routes/appliedJobRoutes');
+const resumeRoutes = require('./routes/resumeRoutes');
 
 
 // DB connection.
@@ -30,6 +33,9 @@ app.use('/api/cgpa', cgpaRoutes);
 app.use('/api/semester-planner', semesterPlannerRoutes);
 app.use('/api/subject-goals', subjectGoalRoutes);
 app.use('/api/skills', skillRoutes);
+app.use('/api/jobs', jobRoutes);
+app.use('/api/applied-jobs', appliedJobRoutes);
+app.use('/api/resume', resumeRoutes);
 
 
 // Start the server.
