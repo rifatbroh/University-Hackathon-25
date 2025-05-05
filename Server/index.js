@@ -12,6 +12,7 @@ const skillRoutes = require('./routes/skillRoutes');
 const jobRoutes = require('./routes/jobRoutes');
 const appliedJobRoutes = require('./routes/appliedJobRoutes');
 const resumeRoutes = require('./routes/resumeRoutes');
+const fashionRoutes = require('./routes/fashionRoutes');
 
 
 // DB connection.
@@ -36,6 +37,7 @@ app.use('/api/skills', skillRoutes);
 app.use('/api/jobs', jobRoutes);
 app.use('/api/applied-jobs', appliedJobRoutes);
 app.use('/api/resume', resumeRoutes);
+app.use('/api/fashion', fashionRoutes);
 
 
 // Start the server.
