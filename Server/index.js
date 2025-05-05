@@ -13,6 +13,7 @@ const jobRoutes = require('./routes/jobRoutes');
 const appliedJobRoutes = require('./routes/appliedJobRoutes');
 const resumeRoutes = require('./routes/resumeRoutes');
 const fashionRoutes = require('./routes/fashionRoutes');
+const movieRoutes = require('./routes/movieRoutes.js'); // Import the movie routes
 
 
 // DB connection.
@@ -38,6 +39,7 @@ app.use('/api/jobs', jobRoutes);
 app.use('/api/applied-jobs', appliedJobRoutes);
 app.use('/api/resume', resumeRoutes);
 app.use('/api/fashion', fashionRoutes);
+app.use('/api/movies', movieRoutes);
 
 
 // Start the server.
