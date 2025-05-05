@@ -14,8 +14,8 @@ const appliedJobRoutes = require('./routes/appliedJobRoutes');
 const resumeRoutes = require('./routes/resumeRoutes');
 const fashionRoutes = require('./routes/fashionRoutes');
 const movieRoutes = require('./routes/movieRoutes.js');
-
 const funFactRoutes = require('./routes/funFactRoutes');
+const scheduleRoutes = require('./routes/scheduleRoutes')
 
 
 
@@ -44,6 +44,7 @@ app.use('/api/resume', resumeRoutes);
 app.use('/api/fashion', fashionRoutes);
 app.use('/api/movies', movieRoutes);
 app.use('/api/fun-fact', funFactRoutes);
+app.use('/api/schedule', scheduleRoutes);
 
 
 // Start the server.
