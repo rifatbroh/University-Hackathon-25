@@ -19,6 +19,7 @@ const scheduleRoutes = require('./routes/scheduleRoutes');
 const focusRoutes = require("./routes/focusRoutes");
 const moodRoutes = require("./routes/moodRoutes");
 const heroDashboardRoutes = require('./routes/heroDashboard');
+const marathonRoutes = require('./routes/marathonRoutes');
 
 
 
@@ -52,6 +53,7 @@ app.use('/api/schedule', scheduleRoutes);
 app.use("/api/focus", focusRoutes);
 app.use("/api/mood", moodRoutes);
 app.use('/api/hero-dashboard', heroDashboardRoutes);
+app.use('/api/marathon', marathonRoutes);
 
 
 // Start the server.
