@@ -2,7 +2,7 @@ const Cgpa = require('../models/Cgpa');
 const Skill = require('../models/Skill');
 const AppliedJob = require('../models/AppliedJob');
 const FocusSession = require('../models/focusSession');
-const MoodEntry = require('../models/MoodEntry');
+const MoodEntry = require('../models/moodEntry');
 const Schedule = require('../models/Schedule');
 
 exports.getHeroDashboard = async (req, res) => {
