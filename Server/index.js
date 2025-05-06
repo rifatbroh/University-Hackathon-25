@@ -14,8 +14,14 @@ const appliedJobRoutes = require('./routes/appliedJobRoutes');
 const resumeRoutes = require('./routes/resumeRoutes');
 const fashionRoutes = require('./routes/fashionRoutes');
 const movieRoutes = require('./routes/movieRoutes.js');
-
 const funFactRoutes = require('./routes/funFactRoutes');
+const scheduleRoutes = require('./routes/scheduleRoutes');
+const focusRoutes = require("./routes/focusRoutes");
+const moodRoutes = require("./routes/moodRoutes");
+const heroDashboardRoutes = require('./routes/heroDashboard');
+const marathonRoutes = require('./routes/marathonRoutes');
+const gymRoutes = require('./routes/gymRoutes');
+const gymBroRoutes = require('./routes/gymBroRoutes');
 
 
 
@@ -44,6 +50,13 @@ app.use('/api/resume', resumeRoutes);
 app.use('/api/fashion', fashionRoutes);
 app.use('/api/movies', movieRoutes);
 app.use('/api/fun-fact', funFactRoutes);
+app.use('/api/schedule', scheduleRoutes);
+app.use("/api/focus", focusRoutes);
+app.use("/api/mood", moodRoutes);
+app.use('/api/hero-dashboard', heroDashboardRoutes);
+app.use('/api/marathon', marathonRoutes);
+app.use('/api/gym', gymRoutes);
+app.use('/api/gym-bro', gymBroRoutes);
 
 
 // Start the server.
