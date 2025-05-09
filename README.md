@@ -1,5 +1,5 @@
 
-<h2 align="center">🛠 Tech Stack</h2>
+<h1 align="center">🛠 Tech Stack</h1>
 <div align="center">
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000">&nbsp;
 <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white">&nbsp;
